@@ -24,7 +24,7 @@ public class HttpJsonTask {
         }
     }
 
-    public String extractIpFromResponse(HttpResponse<String> response){
+    private String extractIpFromResponse(HttpResponse<String> response){
         ObjectMapper objectMapper = new ObjectMapper();
         HttpBinResponse httpBinResponse = objectMapper.readValue(response.body(), HttpBinResponse.class);
         return httpBinResponse.origin();

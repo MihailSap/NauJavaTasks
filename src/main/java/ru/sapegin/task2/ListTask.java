@@ -47,7 +47,7 @@ public class ListTask {
         return merge(left, right);
     }
 
-    public List<Double> getSublist(List<Double> nums, int start, int end) {
+    private List<Double> getSublist(List<Double> nums, int start, int end) {
         List<Double> result = new ArrayList<>();
         for (int i = start; i < end; i++) {
             result.add(nums.get(i));
